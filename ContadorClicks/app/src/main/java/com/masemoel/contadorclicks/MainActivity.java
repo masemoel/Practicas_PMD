@@ -1,0 +1,24 @@
+package com.masemoel.contadorclicks;
+
+import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
+import android.view.View;
+import com.masemoel.contadorclicks.databinding.ActivityMainBinding;
+
+public class MainActivity extends AppCompatActivity {
+    int cont = 0;
+    ActivityMainBinding binding;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView((binding = ActivityMainBinding.inflate(getLayoutInflater())).getRoot());
+        binding.PulsarButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                cont++;
+                binding.contador.setText("Has hecho click " + cont + " veces");
+            }
+        });
+    }
+}

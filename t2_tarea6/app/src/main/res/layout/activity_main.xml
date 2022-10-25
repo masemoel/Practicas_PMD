@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnWebInsti"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="616dp"
+        android:onClick="verWebInsti"
+        android:text="Ver página de Las fuentezuelas" />
+
+    <Button
+        android:id="@+id/btnLlamar"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="143dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="540dp"
+        android:onClick="llamarTelefono"
+        android:text="Llamar por teléfono" />
+
+    <Button
+        android:id="@+id/btnLlamarInsti"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="590dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="93dp"
+        android:onClick="llamarInstituto"
+        android:text="Llamar a Las fuentezuelas" />
+
+    <Button
+        android:id="@+id/btnInstiMaps"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="507dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="164dp"
+        android:onClick="mapaInstituto"
+        android:text="Ver Las fuentezuelas en Google Maps" />
+
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="432dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="251dp"
+        android:onClick="hacerFoto"
+        android:text="Hacer foto" />
+
+    <Button
+        android:id="@+id/btnEnviarMail"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="355dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="316dp"
+        android:onClick="enviarMail"
+        android:text="Enviar un e-mail a Las fuentezuelas" />
+
+    <Button
+        android:id="@+id/btnContactos"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="471dp"
+        android:onClick="verContactos"
+        android:text="Mostrar contactos" />
+
+    <Button
+        android:id="@+id/btnJaenMaps"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="285dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="398dp"
+        android:onClick="mapsJaen"
+        android:text="Buscar Jaén en Google Maps" />
+
+</RelativeLayout>
