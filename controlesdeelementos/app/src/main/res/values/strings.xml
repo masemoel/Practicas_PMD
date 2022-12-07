@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Controles de elementos</string>
+
+    <string-array name="curso">
+        <item>1º</item>
+        <item>1º</item>
+        <item>2º</item>
+    </string-array>
+
+    <string-array name="opcion">
+        <item>BD</item>
+        <item>XML</item>
+        <item>Android</item>
+    </string-array>
+</resources>
