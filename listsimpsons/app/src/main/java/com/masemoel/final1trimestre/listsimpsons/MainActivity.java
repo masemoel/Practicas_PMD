@@ -2,12 +2,15 @@ package com.masemoel.final1trimestre.listsimpsons;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -58,5 +61,23 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             case 4:
                 imageView.setImageResource(R.drawable.maggie);
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        SharedPreferences datos = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor miEditor = datos.edit();
+        miEditor.putInt("posicion", imageView.getId());
+        miEditor.apply();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        SharedPreferences datos = PreferenceManager.getDefaultSharedPreferences(this);
+        int imag = datos.getInt("posicion", R.drawable.homer);
+        Toast.makeText(this, imag, Toast.LENGTH_SHORT).show();
+        imageView.setId(imag);
     }
 }
