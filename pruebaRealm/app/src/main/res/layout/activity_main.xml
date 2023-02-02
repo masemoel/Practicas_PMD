@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNombre"
+        app:layout_constraintStart_toStartOf="@+id/editTextNombre"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
+
+    <Button
+        android:id="@+id/botonGuardar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#8BC34A"
+        android:text="Guardar"
+        app:layout_constraintEnd_toEndOf="@+id/editTextEmail"
+        app:layout_constraintStart_toStartOf="@+id/editTextEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+    <Button
+        android:id="@+id/botonVer"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FF9800"
+        android:text="Ver profesores"
+        app:layout_constraintEnd_toEndOf="@+id/botonGuardar"
+        app:layout_constraintStart_toStartOf="@+id/botonGuardar"
+        app:layout_constraintTop_toBottomOf="@+id/botonGuardar" />
+
+    <Button
+        android:id="@+id/botonBuscarNombre"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Buscar"
+        app:layout_constraintEnd_toEndOf="@+id/botonVer"
+        app:layout_constraintStart_toStartOf="@+id/botonVer"
+        app:layout_constraintTop_toBottomOf="@+id/botonVer" />
+
+    <Button
+        android:id="@+id/botonBuscarID"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#2196F3"
+        android:text="Buscar ID"
+        app:layout_constraintEnd_toEndOf="@+id/botonBuscarNombre"
+        app:layout_constraintStart_toStartOf="@+id/botonBuscarNombre"
+        app:layout_constraintTop_toBottomOf="@+id/botonBuscarNombre" />
+
+    <Button
+        android:id="@+id/botonActualizar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#9C27B0"
+        android:text="Actualizar"
+        app:layout_constraintEnd_toEndOf="@+id/botonBuscarID"
+        app:layout_constraintStart_toStartOf="@+id/botonBuscarID"
+        app:layout_constraintTop_toBottomOf="@+id/botonBuscarID" />
+
+    <Button
+        android:id="@+id/botonEliminarAll"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#F44336"
+        android:text="Eliminar todos"
+        app:layout_constraintEnd_toEndOf="@+id/botonActualizar"
+        app:layout_constraintStart_toStartOf="@+id/botonActualizar"
+        app:layout_constraintTop_toBottomOf="@+id/botonActualizar" />
+
+    <Button
+        android:id="@+id/botonEliminarID"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#E91E63"
+        android:text="Eliminar ID"
+        app:layout_constraintEnd_toEndOf="@+id/botonEliminarAll"
+        app:layout_constraintStart_toStartOf="@+id/botonEliminarAll"
+        app:layout_constraintTop_toBottomOf="@+id/botonEliminarAll" />
+
+    <Button
+        android:id="@+id/botonCursos"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#009688"
+        android:text="Cursos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/botonEliminarID"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/botonEliminarID" />
+</androidx.constraintlayout.widget.ConstraintLayout>
