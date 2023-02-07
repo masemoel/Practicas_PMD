@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardCornerRadius="6dp"
+    card_view:cardElevation="10dp"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="4dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="4dp" >
+
+        <TextView
+            android:id="@+id/tvtextid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:text="Id: " >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff00"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Id: "
+            android:layout_toRightOf="@+id/tvtextid" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvtextemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:text="Email: "
+            android:layout_below="@+id/tvtextid" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff00"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Email: "
+            android:layout_toRightOf="@+id/tvtextemail" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvtextfirstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:text="Nombre: "
+            android:layout_below="@+id/tvtextemail" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvfirstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff00"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Nombre: "
+            android:layout_toRightOf="@+id/tvtextfirstname" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvtextlastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:text="Apellidos: "
+            android:layout_below="@+id/tvtextfirstname" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvlastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff00"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Apellidos: "
+            android:layout_toRightOf="@+id/tvtextlastname" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvtextavatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:text="Avatar: "
+            android:layout_below="@+id/tvtextlastname" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvavatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff00"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Avatar: "
+            android:layout_toRightOf="@+id/tvtextavatar" >
+        </TextView>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
