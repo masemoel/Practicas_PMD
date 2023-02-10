@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffeecc"
+    >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10px"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:text="Sensor de Orientación"
+        android:textColor="#000000"
+        android:background="#ddccaa"
+        />
+
+    <View
+        android:background="#000000"
+        android:layout_width="fill_parent"
+        android:layout_height="1sp">
+    </View>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:text="Azimut"
+        android:textColor="#000000"
+        android:background="#ffddaa"
+        />
+    <TextView
+        android:id="@+id/textViewAzimut"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="azimut"
+        android:textColor="#000000"
+        />
+
+    <View
+        android:background="#000000"
+        android:layout_width="fill_parent"
+        android:layout_height="1sp">
+    </View>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:text="Verticalidad"
+        android:textColor="#000000"
+        android:background="#ffddaa"
+        />
+    <TextView
+        android:id="@+id/textViewVertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="verticalidad"
+        android:textColor="#000000"
+        />
+
+    <View
+        android:background="#000000"
+        android:layout_width="fill_parent"
+        android:layout_height="1sp">
+    </View>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:text="Inclinación lateral"
+        android:textColor="#000000"
+        android:background="#ffddaa"
+        />
+    <TextView
+        android:id="@+id/textViewLateral"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="lateralidad"
+        android:textColor="#000000"
+        />
+
+    <View
+        android:background="#000000"
+        android:layout_width="fill_parent"
+        android:layout_height="1sp">
+    </View>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:text="Orientacion"
+        android:textColor="#000000"
+        android:background="#ffddaa"
+        />
+    <TextView
+        android:id="@+id/textViewOrientacion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="orientacion"
+        android:textColor="#dd0000"
+        />
+
+    <View
+        android:background="#000000"
+        android:layout_width="fill_parent"
+        android:layout_height="1sp">
+    </View>
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:text="Número de lecturas"
+        android:textColor="#000000"
+        android:background="#ffddaa"
+        />
+    <TextView
+        android:id="@+id/textViewContador"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="cero"
+        android:textColor="#000000"
+        />
+</LinearLayout>
