@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Monitor de terremotos</string>
+    <string name="title_activity_maps">Terremoto en el mapa</string>
+</resources>
